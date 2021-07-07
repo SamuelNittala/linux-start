@@ -1,6 +1,7 @@
 #!/bin/bash
 
-pkgs=("curl" "code --classic" "docker" "tilix" "postgresql" "pgadmin4" "minikube")
+pkgs=("curl" "code --classic" "docker" "tilix" "postgresql" 
+	  "pgadmin4" "minikube" "postman")
 
 #pgadmin
 curl https://www.pgadmin.org/static/packages_pgadmin_org.pub | sudo apt-key add
@@ -9,5 +10,5 @@ sudo sh -c 'echo "deb https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/$(lsb_
 #install
 for pkg in "${pkgs[@]}" 
 do
-	snap install $pkg || apt install $pkg
+	snap install $pkg || yes | apt install $pkg
 done
