@@ -5,7 +5,7 @@ Install packages for linux fresh install.
 sudo chmod +x install.sh  
 
 sudo ./install.sh  
----
+
 ./quake.sh
 ```  
 Load tilix config  
