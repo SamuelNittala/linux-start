@@ -1,7 +1,7 @@
 #!/bin/bash
 
 pkgs=("curl" "code --classic" "docker" "tilix" "postgresql" 
-	  "pgadmin4" "minikube" "postman" "xbindkeys")
+	  "pgadmin4" "dconf-cli" "minikube" "postman" "xbindkeys")
 length=${#pkgs[@]}
 echo $length
 #pgadmin
