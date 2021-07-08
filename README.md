@@ -8,7 +8,7 @@ sudo ./install.sh
 ---
 ./quake.sh
 ```  
-Load tilix file  
+Load tilix config  
 ```shell  
 dconf load /com/gexperts/Tilix/ < tilix.dconf
 ```
